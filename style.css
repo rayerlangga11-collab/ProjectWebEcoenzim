@@ -1,0 +1,87 @@
+/* styles.css */
+:root {
+  --color-bg: #f4f9f4;
+  --color-text: #333;
+  --color-accent: #2c6e49;
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+}
+.dark-mode {
+  --color-bg: #1e1e1e;
+  --color-text: #e0e0e0;
+  --color-accent: #58a477;
+}
+.site-header {
+  background: var(--color-accent);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space‐between;
+  align-items: center;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.site-header button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hero {
+  height: 300px;
+  background: url("https://source.unsplash.com/featured/?green-plants,nature")
+    center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-overlay h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.content article h2 {
+  color: var(--color-accent);
+  margin-top: 2rem;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.site-footer {
+  background: var(--color-accent);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
